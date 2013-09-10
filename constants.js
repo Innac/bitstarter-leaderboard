@@ -1,12 +1,12 @@
 var Constants = {
-  APP_NAME: "Bitstarter", 
-  FUNDING_TARGET: 10.00,
+  APP_NAME: "activfits", 
+  FUNDING_TARGET: 20.00,
   FUNDING_UNIT_SYMBOL: "mBTC",
   FUNDING_SI_SCALE: 1000,
   FUNDING_END_DATE: new Date("September 30, 2013"),
   PRODUCT_NAME: "Activfits: Development Version",
   PRODUCT_SHORT_DESCRIPTION: "Activfits is an app that helps elder people stay active and healthy",
-  TWITTER_USERNAME: "nodejs",
+  TWITTER_USERNAME: "innac_lt",
   TWITTER_TWEET: "This student crowdfunder looks interesting.",
   COINBASE_PREORDER_DATA_CODE: "a6ce055b27c6bacc2a9f7f2627d5e024",
   days_left: function() {
