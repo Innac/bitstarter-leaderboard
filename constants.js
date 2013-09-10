@@ -1,6 +1,6 @@
-var Constants = {
+0cvar Constants = {
   APP_NAME: "activfits", 
-  FUNDING_TARGET: 20.00,
+  FUNDING_TARGET: 2000000.00,
   FUNDING_UNIT_SYMBOL: "mBTC",
   FUNDING_SI_SCALE: 1000,
   FUNDING_END_DATE: new Date("September 30, 2013"),
