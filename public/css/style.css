@@ -1,0 +1,215 @@
+/* Statically serve fonts directly to avoid this error in the Chrome console:
+     Resource interpreted as Font but transferred with MIME type font/woff: 
+     "https://themes.googleusercontent.com/static/fonts/ubuntu/v4/0ihfXUL2emPh0ROJezvraLO3LdcAZYWl9Si6vvxL-qU.woff".
+*/
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(../fonts/opensans-300.woff) format('woff');
+}
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Comfortaa Regular'), local('Comfortaa-Regular'), url(../fonts/Comfortaa-Regular.woff) format('woff');
+}
+
+/* Large desktop */
+@media (min-width: 980px) { 
+  body {
+   padding-top: 60px;
+  }
+ .linediv-l {
+   border-right: 1px white solid;
+  }
+ .linediv-r {
+   border-left: 1px white solid;
+ }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+ .copy {
+   padding: 2.5% 10%;
+ }
+ .linediv-l {
+   border-bottom: 1px white solid;
+ }
+ .linediv-r {
+   border-top: 1px white solid;
+ }
+}
+
+/* All form factors */
+
+/* Main body and headings */
+/* 
+  Use slightly lighter body font (Open Sans 300 rather than 400): 
+  https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight 
+
+  Also use slightly lighter subheading (Ubuntu 300 vs. 400)
+*/
+body{
+  background: #fff;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #666;
+}
+
+/*  .heading, .subheading {
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  text-align: center;
+} 
+*/
+a {
+  padding-top: 15px;
+  font-size: 16px;
+  text-transform: none;
+  color: #666;
+}
+a:hover {
+  text-decoration: none;
+}
+p.lead {
+  padding-top: 1.5%;
+  font-size: 24px;
+  line-height: 30px;
+}
+p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/*Navigation*/
+.navbar-fixed-top{
+  height: 50px;
+  line-height: 50px;
+}
+.navbar {
+  background-color: #999;
+}
+.navbar .nav>li {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+.navbar .nav li a, .nav li.active a {
+padding-right: 25px;
+padding-left: 25px;
+      }
+    
+/*Banner*/
+.brand {
+  padding-right: 50px;
+}
+.container a.brand{
+  font-family: 'Comfortaa', Helvetica, Arial, sans-serif;
+  font-size:24px;
+  color: #173D7B;
+}
+.banner-bk {
+  margin: 0;
+  background: url('http://img27.imageshack.us/img27/4272/27jq.jpg');
+  background-size: 1349px 321px;
+  background-repeat:no-repeat;
+  display: compact;
+  border-bottom: 3px solid #4283AA;
+}
+.banner {
+  margin: 0 auto 100px auto;
+  height: 340px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.inner-banner {
+  margin-top: 150px;
+}
+.inner-banner h1 {
+  font-family: 'Comfortaa', cursive;
+  font-weight: normal;
+  color: #173D7B;
+}     
+
+
+/* Video pitch and Action */
+div.span7.video {
+  text-align: none;
+}
+.pitch {
+  padding: 2.5% 0%;
+}
+.order {
+  padding: 2% 0%;
+}
+.actions {
+  background: #e5e6ea; /* Old browsers */
+  background: -moz-linear-gradient(top, #e5e6ea 0%, #ffffff 0%, #e8e8e8 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e6ea), color-stop(0%,#ffffff), color-stop(100%,#e8e8e8)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e5e6ea 0%,#ffffff 0%,#e8e8e8 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #e5e6ea 0%,#ffffff 0%,#e8e8e8 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #e5e6ea 0%,#ffffff 0%,#e8e8e8 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #e5e6ea 0%,#ffffff 0%,#e8e8e8 100%); /* W3C */
+  filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e6ea', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
+  padding: 3% 0%;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+.video, .thermometer, .order, .social, .statistics {
+  text-align: center;
+}
+.statistics h3, .statistics p {
+  color: #666;
+}
+.statistics p .currency {
+  font-size: 100%;
+  line-height: 1;
+}
+
+
+/* Marketing Copy and Footer */
+.copy {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  text-align: justify;
+}
+.asset {
+  padding: 2.5% 0%;
+}
+
+/*faq*/
+.product_name h1 {
+  margin-top: 50px;
+}
+.accordion-group {
+  border-radius: 0;
+}
+.accordion-toggle:hover {
+  background: #C0DFE9;
+}
+.accordion-heading {
+  background: #F2F2F2;
+}
+a.acoordion-toogle.collapsed {
+  color: #666;
+}
+a.accordion-toggle {
+  color: #4574CB;
+}
+
+.footer {
+  color: #cccccc;
+  text-align: center;
+}
+.footer p {
+  font-size: 11px;
+}
+.footer a {
+  color: #ccccff;
+}
+
+/* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+div.addthis_toolbox {
+width: 174px;
+margin: 0 auto;
+}
